@@ -1,0 +1,140 @@
+.game-element {
+  &__doll {
+    width: 80px;
+    height: 150px;
+
+    &_red {
+      background: url("../images/red-doll.com.png") 0 0/cover no-repeat;
+    }
+
+    &_blue {
+      background: url("../images/blue-doll.png") 0 0/cover no-repeat;
+    }
+
+    &_white {
+      background: url("../images/white-doll.png") 0 0/cover no-repeat;
+    }
+  }
+
+  &__bear {
+    height: 150px;
+    width: 150px;
+    background: url("../images/bear.png") 0 0/100% 100% no-repeat;
+  }
+
+  &__automat {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    background: url("../images/ak-47.png") 0 0/100% 100% no-repeat;
+  }
+
+  &__mask {
+    width: 90px;
+    height: 70px;
+
+    &_joker {
+      margin-top: -22px;
+      margin-left: -8px;
+      width: 100px;
+      height: 80px;
+      background: url("../images/mask.png") 0 0/100% 100% no-repeat;
+
+      &_left {
+        margin-top: -25px;
+        margin-left: -12px;
+      }
+    }
+
+    &_med {
+      margin-top: 30px;
+      margin-left: 8px;
+      width: 60px;
+      height: 35px;
+      background: url("../images/med-mask.png") 0 0/cover no-repeat;
+
+      &_down {
+        margin-top: 110px;
+      }
+    }
+
+    &_criminal {
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 60px;
+      height: 60px;
+      background: url("../images/criminal-mask.png") 0 0/100% 100% no-repeat;
+
+      &_down {
+        margin-top: 90px;
+      }
+
+      &_blue-doll {
+        margin-top: 7px;
+      }
+    }
+
+    &_batman {
+      margin-top: -15px;
+      width: 80px;
+      height: 78px;
+      background: url("../images/batman-mask.png") 0 0/100% 100% no-repeat;
+    }
+  }
+
+  &__flame {
+    margin-left: 15px;
+    margin-top: 140px;
+      width:50px;
+      height:50px;
+      background:linear-gradient(-45deg, red, orange);
+      border-radius: 50px 50px 0 50px;
+      transform:rotate(35deg);
+      animation:.1s flame infinite;
+      filter:blur(10px);
+      position:relative;
+      border-left-width:25px;
+      border-top-width:25px;
+    display: none;
+
+    &_red-doll {
+      margin-top: 80px;
+    }
+
+    &_crime-mask {
+      margin-top: 60px;
+    }
+
+    &_med-mask {
+      margin-left: 5px;
+      margin-top: 40px;
+    }
+
+    &_bear {
+      margin-left: 50px;
+    }
+
+    &_active {
+      display: block;
+    }
+
+      &:after,
+      &:before{
+        content:'';
+        width:50px;
+        height:50px;
+        display:block;
+        position:absolute;
+        background:linear-gradient(-45deg, red, orange);
+        animation:.2s flame infinite;
+        transform:scale(.8) rotate(20deg);
+        border-radius: 50px 50px 0 50px;
+        top:20px;
+      }
+      &:before{
+        top:0;
+        animation-duration:.09s;
+        transform:scale(.9) rotate(-15deg) translate(10px, 0px);
+      }
+    }
+}

@@ -1,0 +1,45 @@
+.footer {
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  &__logo {
+    width: 97px;
+    height: 39px;
+    background:  #efdf5e url("../images/logo.svg") 0 0/contain no-repeat;
+    cursor: pointer;
+    transition: .5s ease-in;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__date {
+    margin: 0;
+    font-size: 18px;
+    color: #444;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s ease-in;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+//Анимации взяты из разных открытых источников и доработаны под конкретные случаи
+.animation-dance {
+  animation-name: dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: rotate(0deg);
+  transform-origin: center bottom;
+}
+
+.animation-shake {
+  animation-name: shake;
+  animation-duration: .2s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+
+.animation-fly {
+  animation-name: fly-up;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+.animation-print {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #000;
+  animation: typing 2s steps(4, end);
+}
+
+
+

@@ -1,0 +1,65 @@
+//Анимации взяты из разных открытых источников и доработаны под конкретные случаи
+@keyframes dance {
+  from {
+    transform: rotate(0deg) scale(1, 1);
+  }
+
+  25%{
+    transform: rotate(-20deg) scale(.95, 1.05);
+  }
+
+  50%{
+    transform: rotate(0deg) scale(1, 1);
+  }
+
+  75%{
+    transform: rotate(20deg) scale(.95, 1.05);
+  }
+
+  100%{
+    transform: rotate(0deg) scale(1, 1);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+@keyframes fly-up {
+  0% { transform: translateY(0) }
+  20% { transform: translateY(-10vh); opacity: 0.9}
+  40% { transform: translateY(-20vh); opacity: 0.6 }
+  60% { transform: translateY(-30vh); opacity: 0.4 }
+  80% { transform: translateY(-40vh); opacity: 0.2 }
+  100% { transform: translateY(-50vh); opacity: 0 }
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  25% { width: 10%; }
+  50% { width: 15%; }
+  75% { width: 25%; }
+  100% { width: 30%; }
+}
+
+@keyframes flame{
+  0% {height:60px; width:60px;}
+  50% {height:50px; width:50px;}
+  100% {height:60px; width:60px;}
+}

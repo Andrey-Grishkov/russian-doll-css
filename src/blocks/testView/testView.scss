@@ -1,0 +1,31 @@
+.test {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: #23d5ab 3px solid;
+  height: 1200px;
+  min-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  &__container {
+    min-width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border: #d5d223 3px solid;
+    background: url("../images/sofa.png") 0 0/100% 100% no-repeat;
+    flex-wrap: nowrap;
+
+    &_big-gap {
+      gap: 100px;
+    }
+
+    &_small-gap {
+      gap: 30px;
+    }
+  }
+}

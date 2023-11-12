@@ -1,0 +1,31 @@
+.game-menu {
+  margin: 50px 0 0 20px;
+  width: 200px;
+  height: 92%;
+  border: chartreuse 4px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__title {
+    margin: 50px 0 0 0;
+    font-size: 22px;
+  }
+
+  &__reset-button {
+    margin: 25px 0 0 0;
+    width: 60%;
+    height: 50px;
+    font-size: 25px;
+    background: #23d5ab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease-in;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
