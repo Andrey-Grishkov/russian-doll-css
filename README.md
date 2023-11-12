@@ -1,9 +1,8 @@
 ## Russian sofa CSS games
-___
 
 ### 🪆 Ссылка на проект:
 
-* [Деплой проекта "Russian sofa CSS games"](https://пока-нету/)
+* [Деплой проекта "Russian sofa CSS games"](https://andrey-grishkov.github.io/russian-sofa-css-games/)
 ___
 
 ### 🎭 О проекте "Russian sofa CSS games"
